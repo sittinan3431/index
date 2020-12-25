@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" href="มหาวิทยาลัยแม่โจ้_edit.png">   
+<head>
+        <title>การศึกษา</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+    
+    
+    
+      <div class="w3-panel w3-green">
+        <h2 class="w3-opacity">MaejoUniversity</h2>
+      </div>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>การศึกษา</title>
+        
+    </head>
+<body>
+    <html>
+
+        <head>
+            <style>
+                body {
+                    background-color: rgb(247, 247, 247);
+    
+                }
+            </style>
+        </head>
+    
+        <!DOCTYPE html>
+        <html>
+    
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                body {
+                    font-family: 'Lato', sans-serif;
+                }
+    
+                .overlay {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(255, 248, 248);
+                    background-color: rgba(255, 249, 249, 0.9);
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                }
+    
+                .overlay-content {
+                    position: relative;
+                    top: 25%;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+    
+                .overlay a {
+                    padding: 8px;
+                    text-decoration: none;
+                    font-size: 36px;
+                    color: #c43d3d;
+                    display: block;
+                    transition: 0.3s;
+                }
+    
+                .overlay a:hover,
+                .overlay a:focus {
+                    color: #f7f3f3;
+                }
+    
+                .overlay .closebtn {
+                    position: absolute;
+                    top: 20px;
+                    right: 45px;
+                    font-size: 60px;
+                }
+    
+                @media screen and (max-height: 450px) {
+                    .overlay a {
+                        font-size: 20px
+                    }
+    
+                    .overlay .closebtn {
+                        font-size: 40px;
+                        top: 15px;
+                        right: 35px;
+                    }
+                }
+            </style>
+        </head>
+    
+        <body>
+    
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="http://127.0.0.1:5500/index.html">หน้าหลัก</a>
+                    <a
+                        href="http://127.0.0.1:5500/%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%A7%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2.html">รอบรั้วมหาวิทยาลัย</a>
+                    <a
+                        href="http://127.0.0.1:5500/%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%A2%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2.html">เกี่ยวกับมหาลัย</a>
+                    <a
+                        href="http://127.0.0.1:5500/%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99.html">ตารางเรียน</a>
+                </div>
+            </div>
+            
+        </p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" align="Left">&#9776;แถบเมนู </span>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <br>
+        <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+             <style>
+                .footer {
+                   position: fixed;
+                   left: 0;
+                   bottom: 0;
+                   width: 100%;
+                   background-color: rgb(107, 185, 91);
+                   color: white;
+                   text-align: center;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <div class="footer">
+                  <p>มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+                      โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU Map แผนที่มหาวิทยาลัย</p>
+                </div>
+            
+    
+
+</body>
+</html> -->
